@@ -1,18 +1,24 @@
 {
     "name": "react-router-fix",
     "version": "0.0.0",
+    "homepage": "https://ashrhmn.github.io/react-router-fix/",
     "scripts": {
         "start": "node server.js",
         "dev": "vite",
         "build": "vite build",
-        "preview": "vite preview"
+        "preview": "vite preview",
+        "predeploy": "yarn build && cp dist/index.html dist/404.html",
+        "deploy": "gh-pages -d dist"
     },
     "dependencies": {
+        "@vitejs/plugin-react": "^1.0.7",
         "express": "^4.17.2",
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
         "react-router-dom": "^6.2.1",
-        "@vitejs/plugin-react": "^1.0.7",
         "vite": "^2.7.2"
+    },
+    "devDependencies": {
+        "gh-pages": "^3.2.3"
     }
 }
