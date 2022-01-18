@@ -4,7 +4,7 @@ import { Routes, Route, Link } from 'react-router-dom'
 const App = () => {
   return (
     <div>
-      <h1>React-Router-Dom</h1>
+      <h1>React-Router-Dom V6</h1>
       <ul>
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
